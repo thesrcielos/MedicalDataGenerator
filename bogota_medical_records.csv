@@ -1,0 +1,51 @@
+#Fila,ID_Paciente,Nombre,Género,Edad,Peso (kg),Altura (cm),IMC,Presión Arterial,Síntomas,Diagnóstico (CIE-10),Enfermedades Crónicas,Fecha Consulta,Hospital,Dirección Hospital,Localidad,Nivel Socioeconómico,Seguro Médico
+1,b1c42740,Luz Mayra Restrepo,F,20,81.8,180,25.1,116/81 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2023-04-05,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Medio,Coomeva
+2,dc680dd5,Nohora Carolina Cardona Perdomo,F,45,77.1,169,26.9,118/70 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2023-05-05,Clínica Bogotá,Calle 63 #24-09,Kennedy,Bajo,SISBÉN
+3,566dcee1,Bernardo Antonio Ortiz,M,55,68.9,179,21.5,125/73 mmHg,Dolor de cabeza,I10 - Hipertensión esencial,Hipertensión,2023-06-17,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Bajo,EPS Sura
+4,6914db84,Alejandra Martínez,F,67,55.1,164,20.3,123/74 mmHg,Dolor de cabeza,R51 - Cefalea,Asma,2023-06-26,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,SISBÉN
+5,1ba0992b,Enrique Romero Chacón,M,41,98.3,171,33.4,130/79 mmHg,"Fiebre, Dolor de cabeza",G43.9 - Migraña,"Hipertensión, Diabetes tipo 2",2023-07-01,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,Nueva EPS
+6,48d127e6,Arturo Pérez Muñoz,M,40,93.1,169,32.3,140/65 mmHg,Dolor de cabeza,R51 - Cefalea,Hipertensión,2023-07-23,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Alto,Nueva EPS
+7,3b906155,Yuly Duque,F,28,63.0,172,21.3,106/67 mmHg,Tos persistente,J20.9 - Bronquitis aguda,Asma,2023-07-27,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Bajo,SISBÉN
+8,7ab70747,Álvaro Jorge Cardona Torres,M,23,68.3,174,22.4,128/70 mmHg,Fiebre,A15.0 - Gripe viral,Ninguna,2023-08-07,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,Nueva EPS
+9,2ccee2fc,Elizabeth Díaz Silva,F,15,69.6,170,23.9,142/75 mmHg,Fiebre,A92.0 - Chikungunya,Ninguna,2023-08-12,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Medio,EPS Sura
+10,f58472d1,Diana Mejía Gonzáles,F,56,66.6,170,22.9,111/74 mmHg,Dolor de cabeza,I10 - Hipertensión esencial,Ninguna,2023-10-05,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,Sanitas
+11,0a16a7e9,Michel Myriam Álvarez,F,24,63.1,179,19.6,123/66 mmHg,"Fiebre, Tos persistente, Dolor de cabeza",G43.9 - Migraña,Ninguna,2023-10-11,Hospital Militar Central,Cra. 50 #18-09,Suba,Medio,SISBÉN
+12,19575961,Tatiana Lida Díaz Escobar,F,46,51.4,158,20.6,125/77 mmHg,Tos persistente,J20.9 - Bronquitis aguda,Asma,2023-10-14,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Medio,Sanitas
+13,e83ed4f7,Carlos Henao,M,29,62.9,164,23.3,136/78 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2023-10-18,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Alto,SISBÉN
+14,a8e0e699,Omaira Vásquez,F,15,71.0,160,27.6,128/72 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2023-10-19,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,EPS Sura
+15,9dcf419c,Carmen Mercado Acosta,F,26,54.8,172,18.3,112/68 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2023-11-06,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,SISBÉN
+16,d3c81951,Víctor Castro,M,38,89.6,155,37.0,131/81 mmHg,"Tos persistente, Dolor de cabeza",J45.9 - Asma,Ninguna,2023-11-11,Clínica Bogotá,Calle 63 #24-09,Kennedy,Bajo,SISBÉN
+17,e2f5eca0,Catalina Dayana Pacheco Amaya,F,44,57.1,160,22.2,126/75 mmHg,Tos persistente,J45.9 - Asma,Ninguna,2023-11-27,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,Nueva EPS
+18,cc1f64fe,Esteban Duván Restrepo,M,44,45.0,171,15.3,113/79 mmHg,"Tos persistente, Dolor de cabeza",I10 - Hipertensión esencial,Ninguna,2023-11-28,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,SISBÉN
+19,58137a6e,Wendy Sandra Romero,F,48,57.4,167,20.5,124/81 mmHg,"Tos persistente, Dolor de cabeza",J18.9 - Neumonía,Hipertensión,2023-12-07,Clínica Bogotá,Calle 63 #24-09,Kennedy,Medio,EPS Sura
+20,28990cd5,Doris Castro,F,58,58.3,167,20.9,128/70 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2023-12-10,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Medio,EPS Sura
+21,e9cd629c,Jhon Alfredo Montoya Acevedo,M,31,75.4,183,22.4,118/72 mmHg,"Fiebre, Tos persistente, Dolor de cabeza",G43.9 - Migraña,Asma,2024-01-15,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Bajo,Salud Total
+22,30600962,María Carrillo,F,28,82.8,171,28.0,114/78 mmHg,Fiebre,A90 - Dengue,Ninguna,2024-02-09,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Medio,Sanitas
+23,0b9bbf15,Javier Eder Arango Castillo,M,46,72.6,168,25.4,121/70 mmHg,Tos persistente,J45.9 - Asma,Ninguna,2024-03-10,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Alto,SISBÉN
+24,c4f33b8f,Miguel Dario Guevara Restrepo,M,46,56.4,182,16.9,108/78 mmHg,"Tos persistente, Dolor de cabeza",I10 - Hipertensión esencial,Hipertensión,2024-04-18,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,Sanitas
+25,ca5fb9bf,Maritza Cantillo,F,27,83.7,172,28.0,120/80 mmHg,"Fiebre, Tos persistente",A92.0 - Chikungunya,Ninguna,2024-04-29,Clínica Bogotá,Calle 63 #24-09,Kennedy,Medio,SISBÉN
+26,ab83eb77,Sara Rocío Muñoz,F,46,58.4,167,20.7,118/76 mmHg,Dolor de cabeza,I10 - Hipertensión esencial,Diabetes tipo 2,2024-05-03,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Medio,SISBÉN
+27,85c04c36,Catherine Marlén Loaiza Ariza,F,38,75.2,163,28.0,127/79 mmHg,Fiebre,A15.0 - Gripe viral,Diabetes tipo 2,2024-05-21,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,Nueva EPS
+28,68e02de6,Helena Luz Benítez Muñoz,F,51,71.0,160,27.6,119/81 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-06-04,Clínica Bogotá,Calle 63 #24-09,Kennedy,Bajo,SISBÉN
+29,58e3b9b5,Fernando Hugo González,M,15,74.4,172,25.1,123/75 mmHg,Fiebre,A15.0 - Gripe viral,Ninguna,2024-06-16,Clínica Bogotá,Calle 63 #24-09,Kennedy,Bajo,EPS Sura
+30,2d13aa1e,Ángel Guillermo Santos Ramírez,M,40,56.7,171,19.3,121/70 mmHg,Tos persistente,J18.9 - Neumonía,Ninguna,2024-07-06,Hospital Militar Central,Cra. 50 #18-09,Suba,Medio,SISBÉN
+31,f2bc7d01,Jairo Zapata Galvis,M,39,69.5,159,27.3,134/81 mmHg,Fiebre,A92.0 - Chikungunya,Diabetes tipo 2,2024-07-15,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,Salud Total
+32,2a884912,Elisa Serna,F,47,70.2,183,20.9,119/90 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-07-20,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Bajo,EPS Sura
+33,d3149dba,Andrés Carlos Franco,M,20,77.7,174,25.5,127/96 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-08-05,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Medio,SISBÉN
+34,e826b3ce,Mateo Raúl Arango Montoya,M,25,97.8,169,33.9,119/83 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-08-17,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Medio,Nueva EPS
+35,6b966da8,Andrea María Ardila,F,39,64.2,163,23.9,128/82 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-08-31,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Medio,SISBÉN
+36,081a5af1,María Marleny Guerrero,F,15,63.7,166,22.9,115/75 mmHg,Dolor de cabeza,G43.9 - Migraña,Ninguna,2024-09-01,Clínica Bogotá,Calle 63 #24-09,Kennedy,Medio,Coomeva
+37,73d222d4,Eduardo Humberto Moreno,M,47,71.3,167,25.5,125/67 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-09-12,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Bajo,EPS Sura
+38,f699dfa2,Óscar Carlos Martínez Figueroa,M,41,82.3,187,23.5,121/73 mmHg,Tos persistente,J18.9 - Neumonía,Ninguna,2024-09-24,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Bajo,Nueva EPS
+39,d2239b72,Arley Juan Luna,M,40,78.4,179,24.3,131/70 mmHg,Tos persistente,J18.9 - Neumonía,Ninguna,2024-10-15,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Bajo,EPS Sura
+40,63d0df2d,Luis López Perdomo,M,31,93.7,176,29.9,122/80 mmHg,"Tos persistente, Dolor de cabeza",G43.9 - Migraña,Ninguna,2024-10-16,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Medio,SISBÉN
+41,beaea7ee,María Natalia Montoya Hernández,F,16,73.1,152,31.5,115/79 mmHg,"Fiebre, Tos persistente",J20.9 - Bronquitis aguda,Ninguna,2024-10-16,Hospital Militar Central,Cra. 50 #18-09,Suba,Medio,Sanitas
+42,fcf54fd3,Edna Diana Soto,F,21,57.8,169,20.2,123/76 mmHg,Dolor de cabeza,I10 - Hipertensión esencial,Ninguna,2024-10-16,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,Sanitas
+43,9872a93e,Olga Franco,F,43,87.0,178,27.3,130/76 mmHg,"Fiebre, Dolor de cabeza",G43.9 - Migraña,"Diabetes tipo 2, Asma",2024-11-09,Hospital Militar Central,Cra. 50 #18-09,Suba,Medio,Nueva EPS
+44,0c589e85,Andrea Rosero Solano,F,69,45.0,176,14.5,106/72 mmHg,"Fiebre, Tos persistente",J20.9 - Bronquitis aguda,Ninguna,2024-11-15,Clínica Bogotá,Calle 63 #24-09,Kennedy,Bajo,Nueva EPS
+45,a59a8b3d,Juan Jiménez Blanco,M,24,98.0,174,32.3,117/81 mmHg,Tos persistente,J18.9 - Neumonía,Ninguna,2024-11-20,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Medio,SISBÉN
+46,0731fff1,Mauricio Manrique,M,42,67.9,175,22.0,134/75 mmHg,"Fiebre, Tos persistente, Dolor de cabeza",G43.9 - Migraña,Asma,2024-12-21,Hospital Militar Central,Cra. 50 #18-09,Suba,Bajo,SISBÉN
+47,f5d47063,Piedad María Jiménez,F,24,73.2,170,25.2,118/87 mmHg,Chequeo rutinario,Z00.0 - Examen médico general,Ninguna,2024-12-31,Fundación Santa Fe,Cra. 7 #117-15,Chapinero,Medio,EPS Sura
+48,5b9b15f3,Beatriz Cecilia Bedoya Martínez,F,36,52.7,173,17.5,115/73 mmHg,Fiebre,A92.0 - Chikungunya,Ninguna,2025-01-22,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,SISBÉN
+49,99c477bf,Carlos Fonseca Castro,M,27,67.2,160,26.2,114/81 mmHg,Tos persistente,J20.9 - Bronquitis aguda,Ninguna,2025-02-09,Clínica Colsubsidio,Calle 26 #69A-40,Engativá,Bajo,Nueva EPS
+50,f27b4d9a,Janeth Clara Salazar Bedoya,F,36,84.5,163,31.6,124/76 mmHg,"Tos persistente, Dolor de cabeza",I10 - Hipertensión esencial,Ninguna,2025-03-30,Hospital San Ignacio,Cra. 7 #40-62,Santa Fe,Medio,Particular
