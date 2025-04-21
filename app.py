@@ -1,5 +1,5 @@
-from algoritmhs.data_generator import BogotaMedicalGenerator
-from algoritmhs import constants
+from algorithms.data_generator import BogotaMedicalGenerator
+from algorithms import constants
 import pandas as pd
 
 if __name__ == "__main__":
