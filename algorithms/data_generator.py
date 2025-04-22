@@ -4,7 +4,6 @@ import numpy as np
 
 fake = Faker('es_CO')  
 random.seed(42)
-np.random.seed(42)
 
 BOGOTA_DISTRICTS = [
     'Usaquén', 'Chapinero', 'Santa Fe', 'La Candelaria',
@@ -98,8 +97,7 @@ class BogotaMedicalGenerator:
             },
             'Cáncer de pulmón': {
                 'age_range': (40, 100),
-                'probability': 0.005,  
-                'risk_factors': ['smoking']  
+                'probability': 0.005
             }
         }
 
@@ -114,11 +112,11 @@ class BogotaMedicalGenerator:
             return None  
 
         if age < 18:
-            height = np.clip(np.random.normal(mean_height, std_dev), 145, 200)
+            height = np.clip(np.random.normal(mean_height - 5, std_dev), 140, 190)
         elif age >= 18 and age <= 40:
-            height = np.clip(np.random.normal(mean_height, std_dev * 0.8), 150, 200)
+            height = np.clip(np.random.normal(mean_height, std_dev * 0.8), 145, 200)
         elif age > 40 and age <= 60:
-            height = np.clip(np.random.normal(mean_height, std_dev * 0.6), 150, 200)
+            height = np.clip(np.random.normal(mean_height, std_dev * 0.6), 145, 200)
         else:
             height = np.clip(np.random.normal(mean_height - 2, std_dev * 0.6), 145, 200)
 
@@ -140,6 +138,7 @@ class BogotaMedicalGenerator:
         estimated_weight = ideal_weight * randomness_factor
 
         return round(estimated_weight, 2)
+    
     def generate_age(self):
         return int(np.clip(np.random.normal(35, 15), 15, 100))
 
@@ -154,8 +153,8 @@ class BogotaMedicalGenerator:
 
     def generate_symptoms_diagnosis(self, age):
         symptoms = []
+        age_group = '<18' if age < 18 else '18-60' if age <=60 else '>60'
         for symptom, data in self.symptoms_diagnoses.items():
-            age_group = '<18' if age < 18 else '18-60' if age <=60 else '>60'
             if random.random() < data['age_probability'][age_group]:
                 symptoms.append(symptom)
         
@@ -168,11 +167,28 @@ class BogotaMedicalGenerator:
         
         chronic = []
         for disease, params in self.chronic_diseases.items():
-            if age >= params['age_range'][0] and random.random() < params['probability']:
+            if age >= params['age_range'][0] and random.random() <= params['probability']:
                 chronic.append(disease)
         
         return symptoms, (code, diagnosis), chronic
 
+    def generate_health_insurance(self):
+        return random.choices(population=[
+            'SISBÉN', 
+            'EPS Sura', 
+            'Sanitas', 
+            'Nueva EPS', 
+            'Salud Total', 
+            'Coomeva', 
+            'Particular'],
+            weights=[0.42, 0.15, 0.12, 0.18, 0.07, 0.04, 0.02], 
+            k=1)[0]
+    
+    def generate_socioeconomic_level(self):
+        return random.choices(population=['Bajo', 'Medio', 'Alto'],
+            weights=[0.55, 0.35, 0.10],
+            k=1)[0]
+    
     def generate_patient(self):
         gender = random.choice(['M', 'F'])
         age = self.generate_age()
@@ -201,22 +217,6 @@ class BogotaMedicalGenerator:
             'Hospital': hospital,
             'Dirección Hospital': HOSPITALS_BOGOTA[hospital]['address'],
             'Localidad': HOSPITALS_BOGOTA[hospital]['district'],
-            'Nivel Socioeconómico': random.choices(
-                                        population=['Bajo', 'Medio', 'Alto'],
-                                        weights=[0.55, 0.35, 0.10],
-                                        k=1
-                                    )[0],
-            'Seguro Médico': random.choices(
-                                        population=[
-                                            'SISBÉN', 
-                                            'EPS Sura', 
-                                            'Sanitas', 
-                                            'Nueva EPS', 
-                                            'Salud Total', 
-                                            'Coomeva', 
-                                            'Particular'
-                                        ],
-                                        weights=[0.42, 0.15, 0.12, 0.18, 0.07, 0.04, 0.02], 
-                                        k=1
-                                    )[0]
+            'Nivel Socioeconómico': self.generate_socioeconomic_level(),
+            'Seguro Médico': self.generate_health_insurance()
         }

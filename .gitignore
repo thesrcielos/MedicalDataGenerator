@@ -2,9 +2,12 @@
 __pycache__/
 __pycache__
 test/__pycache__/
+algorithms/__pycache__/
 *.py[cod]
 *$py.class
 .coverage
+htmlcov
+htmlcov/
 
 # C extensions
 *.so
