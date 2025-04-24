@@ -1,9 +1,9 @@
 import unittest
 import random
 import numpy as np
-from unittest.mock import patch
 from datetime import datetime
 from algorithms import data_generator
+from algorithms.data import symptoms_diagnoses, HOSPITALS_BOGOTA
 
 class TestBogotaMedicalGenerator(unittest.TestCase):
     def setUp(self):
@@ -44,6 +44,18 @@ class TestBogotaMedicalGenerator(unittest.TestCase):
         self.assertTrue(40 <= minor_weight <= 100)
         self.assertTrue(40 <= elder_weight <= 120)
     
+    def test_get_bmi_category(self):
+        bmi = self.generator.get_bmi_category(22.5)
+        self.assertEqual(bmi, 'Normal')
+        
+        underweight_bmi = self.generator.get_bmi_category(17.5)
+        overweight_bmi = self.generator.get_bmi_category(27.5)
+        obese_bmi = self.generator.get_bmi_category(32.5)
+        
+        self.assertEqual(underweight_bmi, 'Underweight')
+        self.assertEqual(overweight_bmi, 'Overweight')
+        self.assertEqual(obese_bmi, 'Obese')
+
     def test_generate_blood_pressure(self):
         bp = self.generator.generate_blood_pressure(30, 22.5)
         systolic_part, diastolic_part = bp.split('/')
@@ -55,14 +67,14 @@ class TestBogotaMedicalGenerator(unittest.TestCase):
     def test_symptoms_diagnosis_generation(self):
         # Test different age groups
         for age in [15, 35, 65]:
-            symptoms, diagnosis, chronic = self.generator.generate_symptoms_diagnosis(age)
+            symptoms, diagnosis, chronic = self.generator.generate_symptoms_diagnosis(age, 18.5)
             self.assertIsInstance(symptoms, list)
-            self.assertTrue(len(diagnosis[0]) >= 3)  # ICD-10 code length
+            self.assertTrue(len(diagnosis[0]) >= 3)  
             
             # Verify diagnosis matches symptoms
             if 'Chequeo rutinario' not in symptoms:
-                symptom_data = self.generator.symptoms_diagnoses[random.choice(symptoms)]
-                self.assertIn(diagnosis, symptom_data['diagnoses'])
+                diagnoses = [d for symptom in symptoms for d in symptoms_diagnoses[symptom]['diagnoses']]
+                self.assertIn(diagnosis, diagnoses)
 
     def test_full_patient_generation(self):
         patient = self.generator.generate_patient()
@@ -80,9 +92,9 @@ class TestBogotaMedicalGenerator(unittest.TestCase):
 
         # Test hospital data consistency
         hospital = patient['Hospital']
-        self.assertIn(hospital, data_generator.HOSPITALS_BOGOTA)
-        self.assertEqual(patient['Dirección Hospital'], data_generator.HOSPITALS_BOGOTA[hospital]['address'])
-        self.assertEqual(patient['Localidad'], data_generator.HOSPITALS_BOGOTA[hospital]['district'])
+        self.assertIn(hospital, HOSPITALS_BOGOTA)
+        self.assertEqual(patient['Dirección Hospital'], HOSPITALS_BOGOTA[hospital]['address'])
+        self.assertEqual(patient['Localidad'], HOSPITALS_BOGOTA[hospital]['district'])
 
     def test_socioeconomic_distribution(self):
         levels = [self.generator.generate_socioeconomic_level() for _ in range(100)]

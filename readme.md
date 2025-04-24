@@ -95,7 +95,7 @@ df.to_csv('bogota_patients.csv', index=False, encoding='utf-8-sig')
 # Customization
 Modify these variables in the code:
 
-## Symptoms and diagnoses
+## Symptoms and diagnoses, located in the file data.py in the directory of algorithms
 symptoms_diagnoses = {
     'Fiebre': {
         'diagnoses': [('A15.0', 'Gripe viral'), ...],
@@ -115,15 +115,36 @@ HOSPITALS_BOGOTA = {
 } 
 ````
 
+# Data Visualization
+
+## Height vs Age
+![](./img/f1.png)
+## Height vs Weight
+![](./img/f2.png)
+## Weight vs Age
+![](./img/f3.png)
+## Symptoms by groups of ages
+![](./img/f4.png)
+## Diagnosis by BMI categories
+![](./img/f5.png)
+## Chronic conditions vs BMI
+![](./img/f6.png)
+## Chronic conditions vs Age
+![](./img/f7.png)
+## Age vs BMI vs Number of symptomps
+![](./img/f8.png)
+
 ## Test Coverage
 
-| File                             | Statements | Missed | Coverage |
-|----------------------------------|------------|--------|----------|
-| `algoritmhs/__init__.py`         | 0          | 0      | 100%     |
-| `algoritmhs/data_generator.py`   | 46         | 0      | 100%     |
-| `test/__init__.py`               | 0          | 0      | 100%     |
-| `test/test_data_generator.py`    | 67         | 1      | 99%      |
-| **TOTAL**                        | 113        | 1      | **99%**  |
+| Name                          | Stmts | Miss | Cover |
+|------------------------------|-------|------|-------|
+| algorithms\\\_\_init\_\_.py           |     0 |    0 | 100%  |
+| algorithms\\data.py           |     3 |    0 | 100%  |
+| algorithms\\data_generator.py |    92 |    3 | 97%   |
+| test\\\_\_init\_\_.py                 |     0 |    0 | 100%  |
+| test\\test_data_generator.py |    96 |    1 | 99%   |
+| **TOTAL**                    |   191 |    4 | 98%   |
+
 
 ## Limitations ⚠️
 ### **Synthetic Data**
